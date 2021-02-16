@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <fieldset style="width:350">
+    <legend>HTML</legend>
+range : <input id="input" type="range" min="0" max="100" step="10" name="range">
+<p>range <span id="sssss">윤경쌤 바보</span></p>
+</fieldset>
+
+<script>
+
+
+  init();
+  function init() {
+    let input = document.getElementById("input");
+
+    input.addEventListener("click", inputValue)
+    
+  }
+
+  function inputValue(e) {
+    let pp = document.getElementById("sssss");
+    
+    let a = input.target
+    console.dir(input.target);
+
+    pp.innerHTML = input.value
+  }
+
+</script>
+</body>
+</html>
